@@ -47,7 +47,7 @@ export function ConfirmDialog({
           <button
             type="button"
             onClick={onCancel}
-            className="rounded-input border border-line px-3 py-1.5 text-sm text-ink hover:bg-paper"
+            className="rounded-input border border-line px-3 py-1.5 text-sm text-ink hover:bg-line"
           >
             {cancelLabel}
           </button>

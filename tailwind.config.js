@@ -4,15 +4,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: 'var(--ink)',
-        paper: 'var(--paper)',
-        surface: 'var(--surface)',
-        line: 'var(--line)',
-        muted: 'var(--muted)',
-        action: 'var(--action)',
-        success: 'var(--success)',
-        danger: 'var(--danger)',
-        desk: 'var(--desk)',
+        ink: 'rgb(var(--ink) / <alpha-value>)',
+        paper: 'rgb(var(--paper) / <alpha-value>)',
+        surface: 'rgb(var(--surface) / <alpha-value>)',
+        line: 'rgb(var(--line) / <alpha-value>)',
+        muted: 'rgb(var(--muted) / <alpha-value>)',
+        action: 'rgb(var(--action) / <alpha-value>)',
+        success: 'rgb(var(--success) / <alpha-value>)',
+        danger: 'rgb(var(--danger) / <alpha-value>)',
+        desk: 'rgb(var(--desk) / <alpha-value>)',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],

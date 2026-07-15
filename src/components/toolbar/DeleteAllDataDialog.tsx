@@ -36,7 +36,7 @@ export function DeleteAllDataDialog({ open, onClose }: DeleteAllDataDialogProps)
         <button
           type="button"
           onClick={onClose}
-          className="rounded-input border border-line px-3 py-1.5 text-sm text-ink hover:bg-paper"
+          className="rounded-input border border-line px-3 py-1.5 text-sm text-ink hover:bg-line"
         >
           Cancel
         </button>

@@ -62,7 +62,7 @@ export function CustomizePanel({ open, onClose, resumeId, settings }: CustomizeP
                   aria-label={swatch.label}
                   aria-pressed={isActive}
                   onClick={() => updateSettings(resumeId, { accentColor: swatch.hex })}
-                  className={`h-8 w-8 rounded-full border-2 focus:outline-none focus:ring-2 focus:ring-action focus:ring-offset-2 ${
+                  className={`h-8 w-8 rounded-full border-2 transition-transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-action focus:ring-offset-2 ${
                     isActive ? 'border-action' : 'border-transparent'
                   }`}
                   style={{ backgroundColor: swatch.hex }}
@@ -107,8 +107,10 @@ export function CustomizePanel({ open, onClose, resumeId, settings }: CustomizeP
             {Object.values(FONT_PAIRS).map((pair) => (
               <label
                 key={pair.id}
-                className={`flex cursor-pointer items-center justify-between rounded-card border p-3 has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-action ${
-                  settings.fontPairId === pair.id ? 'border-action ring-1 ring-action' : 'border-line'
+                className={`flex cursor-pointer items-center justify-between rounded-card border p-3 transition-colors has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-action ${
+                  settings.fontPairId === pair.id
+                    ? 'border-action ring-1 ring-action'
+                    : 'border-line hover:border-action/50 hover:bg-line'
                 }`}
               >
                 <span className="flex flex-col">

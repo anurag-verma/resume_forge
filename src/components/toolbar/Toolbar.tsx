@@ -45,7 +45,7 @@ export function Toolbar() {
 
       <button
         type="button"
-        className="rounded-input p-2 text-ink hover:bg-paper md:hidden"
+        className="rounded-input p-2 text-ink hover:bg-line md:hidden"
         aria-label="Open menu"
         aria-expanded={mobileMenuOpen}
         onClick={() => setMobileMenuOpen((open) => !open)}
@@ -105,7 +105,7 @@ function ToolbarActions({
   onOpenCustomize,
 }: ToolbarActionsProps) {
   const buttonClass =
-    'flex items-center whitespace-nowrap gap-1 lg:gap-1.5 rounded-input border border-line px-2 lg:px-3 py-1.5 text-xs lg:text-sm text-ink hover:bg-paper'
+    'flex items-center whitespace-nowrap gap-1 lg:gap-1.5 rounded-input border border-line px-2 lg:px-3 py-1.5 text-xs lg:text-sm text-ink hover:bg-line'
 
   return (
     <div className={stacked ? 'flex flex-col gap-2' : 'flex items-center gap-1.5 lg:gap-2'}>

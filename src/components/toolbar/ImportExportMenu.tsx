@@ -100,7 +100,7 @@ export function ImportExportMenu({ className }: ImportExportMenuProps) {
             type="button"
             role="menuitem"
             onClick={handleImportClick}
-            className="block w-full rounded-input px-3 py-2 text-left text-sm text-ink hover:bg-paper"
+            className="block w-full rounded-input px-3 py-2 text-left text-sm text-ink hover:bg-line"
           >
             Import from file…
           </button>
@@ -109,7 +109,7 @@ export function ImportExportMenu({ className }: ImportExportMenuProps) {
             role="menuitem"
             onClick={handleExportSingle}
             disabled={!activeResume}
-            className="block w-full rounded-input px-3 py-2 text-left text-sm text-ink hover:bg-paper disabled:opacity-50"
+            className="block w-full rounded-input px-3 py-2 text-left text-sm text-ink hover:bg-line disabled:opacity-50"
           >
             Export this resume
           </button>
@@ -117,7 +117,7 @@ export function ImportExportMenu({ className }: ImportExportMenuProps) {
             type="button"
             role="menuitem"
             onClick={handleExportAll}
-            className="block w-full rounded-input px-3 py-2 text-left text-sm text-ink hover:bg-paper"
+            className="block w-full rounded-input px-3 py-2 text-left text-sm text-ink hover:bg-line"
           >
             Export all resumes
           </button>
@@ -129,7 +129,7 @@ export function ImportExportMenu({ className }: ImportExportMenuProps) {
               setOpen(false)
               setDeleteAllOpen(true)
             }}
-            className="block w-full rounded-input px-3 py-2 text-left text-sm text-danger hover:bg-paper"
+            className="block w-full rounded-input px-3 py-2 text-left text-sm text-danger hover:bg-line"
           >
             Delete all my data
           </button>

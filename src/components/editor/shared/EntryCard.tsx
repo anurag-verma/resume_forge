@@ -40,7 +40,7 @@ export function EntryCard({
       style={style}
       className={`rounded-card border border-line bg-surface ${isDragging ? 'z-10 opacity-50' : ''}`}
     >
-      <div className="flex items-center gap-2 p-3">
+      <div className="flex items-center gap-2 rounded-t-card p-3 transition-colors hover:bg-line">
         <button
           type="button"
           {...attributes}

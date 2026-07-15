@@ -64,17 +64,38 @@ export function SectionList({ resumeId }: SectionListProps) {
             {availableTypes.length === 0 ? (
               <p className="px-3 py-2 text-sm text-muted">All section types added.</p>
             ) : (
-              availableTypes.map((type) => (
-                <button
-                  key={type}
-                  type="button"
-                  role="menuitem"
-                  onClick={() => handleAdd(type)}
-                  className="block w-full rounded-input px-3 py-2 text-left text-sm text-ink hover:bg-paper"
-                >
-                  {SECTION_TYPE_LABELS[type]}
-                </button>
-              ))
+              <>
+                {availableTypes
+                  .filter((type) => type !== 'custom')
+                  .map((type) => (
+                    <button
+                      key={type}
+                      type="button"
+                      role="menuitem"
+                      onClick={() => handleAdd(type)}
+                      className="block w-full rounded-input px-3 py-2 text-left text-sm text-ink hover:bg-line"
+                    >
+                      {SECTION_TYPE_LABELS[type]}
+                    </button>
+                  ))}
+
+                {availableTypes.includes('custom') && (
+                  <>
+                    <div className="my-1 border-t border-line" />
+                    <p className="px-3 pb-1 pt-1 text-xs text-muted">
+                      Or add something custom
+                    </p>
+                    <button
+                      type="button"
+                      role="menuitem"
+                      onClick={() => handleAdd('custom')}
+                      className="block w-full rounded-input px-3 py-2 text-left text-sm text-ink hover:bg-line"
+                    >
+                      {SECTION_TYPE_LABELS.custom}
+                    </button>
+                  </>
+                )}
+              </>
             )}
           </div>
         )}

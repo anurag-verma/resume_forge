@@ -59,7 +59,7 @@ export function ResumeManager() {
         onClick={() => setOpen((value) => !value)}
         aria-expanded={open}
         aria-haspopup="menu"
-        className="hidden min-w-0 items-center gap-1 rounded-input border border-line px-3 py-1.5 text-sm text-ink hover:bg-paper md:flex"
+        className="hidden min-w-0 items-center gap-1 rounded-input border border-line px-3 py-1.5 text-sm text-ink hover:bg-line md:flex"
       >
         <span className="max-w-[100px] truncate lg:max-w-[160px]">
           {activeResume?.name ?? 'Untitled Resume'}
@@ -76,7 +76,7 @@ export function ResumeManager() {
           {resumes.map((resume) => (
             <div
               key={resume.id}
-              className="flex items-center gap-1 rounded-input px-1 py-1 hover:bg-paper"
+              className="flex items-center gap-1 rounded-input px-1 py-1 hover:bg-line"
             >
               {renamingId === resume.id ? (
                 <input

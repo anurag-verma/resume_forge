@@ -37,7 +37,7 @@ export function SectionCard({ section, resumeId, children }: SectionCardProps) {
       style={style}
       className={`rounded-card border border-line bg-surface shadow-subtle ${isDragging ? 'z-10 opacity-50' : ''}`}
     >
-      <div className="flex items-center gap-2 p-3">
+      <div className="flex items-center gap-2 rounded-t-card p-3 transition-colors hover:bg-line">
         <button
           type="button"
           {...attributes}

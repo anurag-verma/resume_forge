@@ -28,14 +28,14 @@ export function ImportConfirmDialog({ data, onCancel, onConfirm }: ImportConfirm
         <button
           type="button"
           onClick={onCancel}
-          className="rounded-input border border-line px-3 py-1.5 text-sm text-ink hover:bg-paper"
+          className="rounded-input border border-line px-3 py-1.5 text-sm text-ink hover:bg-line"
         >
           Cancel
         </button>
         <button
           type="button"
           onClick={() => onConfirm('merge')}
-          className="rounded-input border border-line px-3 py-1.5 text-sm text-ink hover:bg-paper"
+          className="rounded-input border border-line px-3 py-1.5 text-sm text-ink hover:bg-line"
         >
           {data.kind === 'single-resume' ? 'Add as new resume' : 'Merge'}
         </button>

@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #1c2430;
+  --paper: #fafaf7;
+  --surface: #ffffff;
+  --line: #e4e2dc;
+  --muted: #6b7280;
+  --action: #2456a6;
+  --success: #2f7d4f;
+  --danger: #b4402f;
+  --desk: #edece7;
+
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+}
+
+/* Frontend spec §6: visible focus rings (--action, 2px) on every interactive
+ * element. This is a fallback: elements that already opt into their own
+ * `focus:outline-none focus:ring-2 focus:ring-action` (a higher-specificity
+ * class-based :focus rule) keep using that instead — this only fills the gap
+ * for the many buttons/links/inputs across the app that never set their own
+ * focus styling and would otherwise fall back to inconsistent browser
+ * defaults. `:focus-visible` (not `:focus`) means it only shows for keyboard/
+ * programmatic focus, not for a mouse click. */
+:focus-visible {
+  outline: 2px solid var(--action);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,10 @@
+/*
+ * Only the @page rule lives here — everything else (hiding the app chrome,
+ * showing only the printable resume) is done with Tailwind's `print:`
+ * variant directly on the relevant elements (App.tsx), since Tailwind has
+ * no utility for @page itself.
+ */
+@page {
+  size: A4;
+  margin: 0;
+}

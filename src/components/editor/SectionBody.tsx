@@ -1,4 +1,5 @@
 import { CertificationsForm } from './sections/CertificationsForm'
+import { CustomSectionForm } from './sections/CustomSectionForm'
 import { EducationForm } from './sections/EducationForm'
 import { ExperienceForm } from './sections/ExperienceForm'
 import { LanguagesForm } from './sections/LanguagesForm'
@@ -28,6 +29,8 @@ export function SectionBody({ resumeId, section }: SectionBodyProps) {
       return <CertificationsForm resumeId={resumeId} section={section} />
     case 'languages':
       return <LanguagesForm resumeId={resumeId} section={section} />
+    case 'custom':
+      return <CustomSectionForm resumeId={resumeId} section={section} />
     default:
       return <p className="text-sm text-muted">This section's fields will appear here.</p>
   }

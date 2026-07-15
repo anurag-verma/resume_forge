@@ -1,5 +1,12 @@
 # ResumeForge
 
+![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white)
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?logo=tailwindcss&logoColor=white)
+![Zustand](https://img.shields.io/badge/State-Zustand-443E38)
+![Vitest](https://img.shields.io/badge/Tested_with-Vitest-6E9F18?logo=vitest&logoColor=white)
+
 A 100% free, client-side resume builder. No accounts, no backend, no database, no analytics — nothing you type ever leaves your device.
 
 ![Editor with live preview](screenshots/02-editor-preview.png)

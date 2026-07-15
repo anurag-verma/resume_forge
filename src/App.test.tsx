@@ -11,7 +11,7 @@ describe('App shell & layout', () => {
   it('renders the toolbar, editor panel, and preview pane', async () => {
     render(<App />)
 
-    expect(screen.getByText('ResumeForge')).toBeInTheDocument()
+    expect(screen.getByRole('img', { name: 'ResumeForge' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'Personal Info' })).toBeInTheDocument()
     // The active template is React.lazy-loaded (RB-024), so it resolves asynchronously.
     // It renders twice: once in the on-screen preview, once in the hidden

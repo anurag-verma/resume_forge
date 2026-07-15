@@ -24,7 +24,13 @@ export function Toolbar() {
   return (
     <header className="relative z-10 flex h-14 shrink-0 items-center justify-between border-b border-line bg-surface px-4 md:px-6">
       <div className="flex min-w-0 items-center gap-4">
-        <img src={logo} alt="ResumeForge" className="h-16 w-auto shrink-0" />
+        <img
+          src={logo}
+          alt="ResumeForge"
+          width={186}
+          height={64}
+          className="h-16 w-auto shrink-0"
+        />
         <ResumeManager />
       </div>
 

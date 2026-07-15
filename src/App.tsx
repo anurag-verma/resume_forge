@@ -3,6 +3,7 @@ import { EditorPanel } from './components/editor/EditorPanel'
 import { PreviewPane } from './components/preview/PreviewPane'
 import { ResumeDocument } from './components/preview/ResumeDocument'
 import { Toolbar } from './components/toolbar/Toolbar'
+import { Footer } from './components/ui/Footer'
 import { MobileTabBar, type MobileView } from './components/ui/MobileTabBar'
 import { useResumeStore } from './store/useResumeStore'
 import { useSettingsStore } from './store/useSettingsStore'
@@ -34,6 +35,7 @@ function App() {
           </section>
         </main>
         <MobileTabBar active={mobileView} onChange={setMobileView} />
+        <Footer />
       </div>
 
       {/* Print-only: the real, unscaled resume, with no preview chrome
